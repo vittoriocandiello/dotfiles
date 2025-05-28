@@ -2,6 +2,6 @@
 	name = Vittorio
 	email = vittorio.candiello@gmail.com
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [core]
 	editor = nvim
