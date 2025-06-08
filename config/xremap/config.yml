@@ -1,0 +1,12 @@
+keymap:
+  - name: "Default Mode"
+    mode: default
+    remap:
+      Alt-k: { set_mode: coding }
+      CapsLock: CapsLock
+
+  - name: "Coding Mode"
+    mode: coding
+    remap:
+      Alt-k: { set_mode: default }
+      CapsLock: Esc
