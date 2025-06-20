@@ -1,5 +1,0 @@
-#!/bin/bash
-
-# Avvia xremap in background (senza bloccare il terminale)
-sudo xremap --watch /home/vittorio/.dotfiles/config/xremap/config.yml &>/dev/null &
-echo "xremap avviato in background"
