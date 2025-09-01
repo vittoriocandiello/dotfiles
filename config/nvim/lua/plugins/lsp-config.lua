@@ -34,7 +34,8 @@ return {
         capabilities = capabilities
       })
       lspconfig.clangd.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
+        cmd = { "clangd", "--background-index", "--cross-file-rename", "--clang-tidy" },
       })
       lspconfig.pyright.setup({
         capabilities = capabilities
@@ -43,6 +44,7 @@ return {
       vim.keymap.set("n", "gD", vim.lsp.buf.declaration, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
       vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+      vim.keymap.set({ "n", "v" }, "<leader>e", vim.diagnostic.open_float, {})
     end,
   },
 }
